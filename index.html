@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mysticode</title>
+    <meta
+      name="description"
+      content="Mysticode diseña y publica aplicaciones para Android e iOS con Flutter."
+    />
+    <link rel="icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #152c3a;
+        --ink: #f4f7f8;
+        --muted: #c5d4dc;
+        --line: rgba(255, 255, 255, 0.12);
+        --cyan: #3ec6c6;
+        --lime: #b7d96a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: Outfit, sans-serif;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+          var(--bg);
+        background-size: 48px 48px, 48px 48px, auto;
+        color: var(--ink);
+      }
+
+      main {
+        width: min(920px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      .logo {
+        display: block;
+        width: min(560px, 100%);
+        height: auto;
+        margin: 12px auto 8px;
+      }
+
+      .intro {
+        max-width: 38rem;
+        margin: 8px auto 40px;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .work {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .work li {
+        margin: 0;
+        padding: 22px 20px 20px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(8, 22, 30, 0.35);
+      }
+
+      .work h2 {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        background: linear-gradient(90deg, var(--cyan), var(--lime));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .work p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      footer {
+        margin-top: 48px;
+        text-align: center;
+      }
+
+      footer a {
+        color: var(--ink);
+        font-weight: 500;
+        text-underline-offset: 4px;
+      }
+
+      footer a:hover {
+        color: var(--lime);
+      }
+
+      @media (max-width: 720px) {
+        .work {
+          grid-template-columns: 1fr;
+        }
+
+        .intro {
+          font-size: 1.05rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="logo.png" alt="Mysticode. Multi-platform apps." />
+      <p class="intro">
+        Diseñamos y publicamos aplicaciones para Android e iOS. El trabajo cubre
+        el producto, el desarrollo con Flutter y la salida en las tiendas.
+      </p>
+      <ul class="work">
+        <li>
+          <h2>Aplicaciones</h2>
+          <p>Apps con Flutter para Android e iOS, desde la idea hasta una versión que se pueda usar.</p>
+        </li>
+        <li>
+          <h2>Tiendas</h2>
+          <p>Publicación en Google Play y App Store, con las fichas, los builds y la revisión.</p>
+        </li>
+        <li>
+          <h2>Mantenimiento</h2>
+          <p>Nuevas versiones, correcciones y seguimiento después del lanzamiento.</p>
+        </li>
+      </ul>
+      <footer>
+        <a href="mailto:mysticodeapps@gmail.com">mysticodeapps@gmail.com</a>
+      </footer>
+    </main>
+  </body>
+</html>
